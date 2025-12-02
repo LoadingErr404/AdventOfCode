@@ -9,7 +9,7 @@ DECLARE
 BEGIN
   
 -- open file
-      file_handle := utl_file.fopen('HUJER_DIR','test', 'r');
+      file_handle := utl_file.fopen(dir, file, 'r');
     
       loop
         begin
@@ -64,4 +64,5 @@ BEGIN
       dbms_output.put_line(concat('Pass: ',zeroCounter));
   
 END;
+
   
